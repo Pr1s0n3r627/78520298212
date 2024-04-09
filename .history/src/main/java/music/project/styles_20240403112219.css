@@ -1,0 +1,24 @@
+/* style.css */
+.control-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 30;
+    -fx-border-color: white;
+    -fx-border-radius: 30;
+}
+
+.control-button:hover {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+.seek-slider .thumb {
+    -fx-background-color: white;
+}
+
+.seek-slider .track {
+    -fx-background-color: #B3B3B3;
+}
+
+.seek-slider .filled-track {
+    -fx-background-color: white;
+}

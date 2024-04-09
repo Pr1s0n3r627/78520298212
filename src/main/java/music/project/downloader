@@ -1,0 +1,58 @@
+/*package music.project;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import se.michaelthelin.spotify.SpotifyApi;
+import se.michaelthelin.spotify.exceptions.SpotifyWebApiException;
+import se.michaelthelin.spotify.model.playlist.PlaylistTrack;
+
+public class downloader {
+
+    // WARNING: Never share your client ID and secret publicly!
+    private static final String CLIENT_ID = "1566e89e2c604ec39b3a522c56830327";
+    private static final String CLIENT_SECRET = "bc116c98302646a7809b9b39bcd7b1c7";
+    private static final String REDIRECT_URI = "http://localhost:8080";  // Replace with your redirect URI
+
+    public static void main(String[] args) {
+        // Authorization code flow (replace with your implementation)
+        String accessToken = getAccessToken(); // Replace with your access token retrieval logic
+
+        SpotifyApi api = new SpotifyApi.Builder()
+                .setClientId(CLIENT_ID)
+                .setClientSecret(CLIENT_SECRET)
+                .setRedirectUri(REDIRECT_URI)
+                .build();
+
+        String playlistId = "https://open.spotify.com/playlist/5uSk60WC8vEztuaZTrDg0e?si=8a27d5fb30314874";  // Replace with the ID of the playlist you want to access
+
+        try {
+            // Get playlist tracks
+            PlaylistTrack[] playlistTracks = api.getPlaylistTracks(playlistId)
+                    .offset(0)
+                    .limit(100)  // Adjust limit as needed
+                    .build()
+                    .execute();
+
+            System.out.println("Playlist Tracks:");
+            for (PlaylistTrack track : playlistTracks) {
+                JsonObject trackObject = new Gson().toJsonTree(track.getTrack()).getAsJsonObject();
+                String trackName = trackObject.get("name").getAsString();
+                String artistName = trackObject.get("artists").getAsJsonArray().get(0)
+                        .getAsJsonObject().get("name").getAsString();
+                System.out.println(String.format("%s - %s", trackName, artistName));
+            }
+
+        } catch (SpotifyWebApiException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+
+    // Replace this method with your implementation to obtain an access token using OAuth 2.0
+    // Refer to Spotify's documentation for details: https://developer.spotify.com/documentation/web-api/concepts/authorization/
+    private static String getAccessToken() {
+        // Implement your access token retrieval logic here
+        return "";
+    }
+}
+
+*/

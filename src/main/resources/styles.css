@@ -1,0 +1,21 @@
+.background {
+    -fx-background-color: #f0f0f0; /* Set background color */
+}
+
+.controls {
+    -fx-spacing: 10; /* Set spacing between controls */
+    -fx-padding: 10; /* Add padding around controls */
+}
+
+.control-button {
+    -fx-background-color: #4CAF50; /* Set button background color */
+    -fx-text-fill: white; /* Set button text color */
+    -fx-font-size: 14px; /* Set button font size */
+    -fx-padding: 5 10; /* Add padding to button */
+    -fx-border-radius: 5; /* Round button corners */
+    -fx-background-radius: 5; /* Round button corners */
+}
+
+.control-button:hover {
+    -fx-background-color: #45a049; /* Change button background color on hover */
+}

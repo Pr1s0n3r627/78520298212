@@ -1,0 +1,35 @@
+/* style.css */
+
+.root {
+    -fx-background-color: black;
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial";
+}
+
+.control-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 50%;
+    -fx-border-color: white;
+    -fx-border-radius: 50%;
+    -fx-text-fill: white;
+}
+
+.control-button:hover {
+    -fx-background-color: #333333;
+}
+
+.seek-slider .track {
+    -fx-background-color: #333333;
+}
+
+.seek-slider .thumb {
+    -fx-background-color: white;
+    -fx-background-radius: 50%;
+}
+
+.seek-slider .thumb:hover {
+    -fx-background-color: #666666;
+}

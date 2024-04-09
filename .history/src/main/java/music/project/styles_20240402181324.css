@@ -1,0 +1,28 @@
+.background {
+    -fx-background-color: #000000; /* Amoled black background */
+}
+
+.controls {
+    -fx-alignment: center;
+}
+
+.control-button {
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-background-color: #007bff; /* Blue button background */
+    -fx-background-radius: 20px; /* Rounded button corners */
+    -fx-border-radius: 20px; /* Rounded button borders */
+}
+
+.custom-slider .track {
+    -fx-background-color: #333333; /* Dark gray track color */
+}
+
+.custom-slider .thumb {
+    -fx-background-color: #ffffff; /* White thumb color */
+    -fx-background-insets: 0;
+    -fx-background-radius: 10px; /* Rounded thumb */
+    -fx-padding: 5px;
+    -fx-shape: "M0,0 V10 L5,0 Z"; /* Triangular thumb shape */
+}
